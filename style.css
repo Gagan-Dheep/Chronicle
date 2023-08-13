@@ -12,6 +12,7 @@
     top: 0;
     z-index: 10;
     /* /* color: black !important; */
+    background-color: #fff;
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 } 
 
@@ -78,18 +79,38 @@
 }   
 
 .navbar-brand img{
-    width: 15%;
+    width: 80px;
 }
 
+/* HEADING */
 
+.logo{
+font-size: 25px;
+font-weight: bolder;
+font-family: 'Courier New', Courier, monospace;
+background: linear-gradient(90deg,#f59139,#6a307a,#458eba);
+color: transparent;
+-webkit-background-clip: text;
+}
+
+.heading{
+    text-align: center;
+    font-size: 35px;
+    background: linear-gradient(90deg,#7345c4,#f578fb,#1287c5 ,#2562e4);
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-bottom: 10px;
+
+}
+/* SECTION */
 section{
     height: 100vh;
      padding: 75px 9% 20Px;
   }
 
-  
+  /* linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%); */
   .btn-grad {
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+    background-image: linear-gradient(to right, #f59139 0%, #904fa1 51%,#1287c5  100%);
     text-align: center;
     margin: 10px;
     text-transform: uppercase;
@@ -156,6 +177,8 @@ font-size: 30px;
 
 .home .image{
     filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
+    width: 100%;
+    height: 100%;
   }
 
 
@@ -175,6 +198,7 @@ font-size: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px;
    
 }
 .icon img{ 
@@ -182,10 +206,16 @@ font-size: 30px;
     aspect-ratio: 3/2;
     object-fit: contain;
 mix-blend-mode: multiply;
-   
+}
+
+.icon img:hover{
+    transform: scale(1.1);
+    mix-blend-mode: luminosity;
 }
 /* Contact section */
-
+.contact{
+    margin: 10px;
+}
 
 .contact-left{
     flex-basis: 35%;
