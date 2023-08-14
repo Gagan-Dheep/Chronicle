@@ -169,7 +169,6 @@ font-size: 30px;
     display: flex;
     align-items: center;
     flex:1 1 350px;
-   /* background: url(./images/stacked-steps-haikei-removebg-preview.png); */
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -185,6 +184,7 @@ font-size: 30px;
 
 .home .content h3{
     font-size: 40px;
+    padding-left: 10px;
 }
 .home .content .text{
     font-size: 30px;
