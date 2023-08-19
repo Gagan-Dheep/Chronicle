@@ -25,9 +25,16 @@ submitbtn.addEventListener("click",()=>{
     var email = document.getElementById("email").value;
     var comment = document.getElementById("comment").value;
 
+    const emailpattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
     if(name==="" || email===""|| comment===""){
         popmessage.textContent=alert("please fill out all fields")
         return
+    }
+
+    if(!emailpattern.test(email)){
+        alert("Please enter a valid email address.");
+        return;
     }
 
     setTimeout(()=>{
