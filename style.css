@@ -269,6 +269,10 @@ form input,form textarea{
     padding: 5px;
     margin: 15px 0;
     border-radius: 10px;
+}
+.pop-message{
+    font-size: 18px;
+    color: #2ef50b;
 
 }
 
@@ -326,6 +330,9 @@ form input,form textarea{
         display: none;
     }
 
+    .skillbar .icon img{
+        padding-top: 10px;
+    }
     .row{
         flex-wrap: nowrap;
         flex-direction: column;

@@ -90,11 +90,12 @@
     <div class="skillbar" id="skillbar">
         <h1 class="heading">SKILL</h1>
         <div class="icon">
-            <img src="./images/html-5.png" alt="">
+            <img src="./images/html-5.png" alt="html">
             <img src="./images/css-3.png" alt="">
             <img src="./images/javascript.png" alt="">
             <img src="./images/bootstrap.png" alt="">
             <img src="./images/jquery-wordmark.png" alt="">
+            <img src="./images/figma-dark.png">
         </div>
     </div>
 
@@ -113,12 +114,14 @@
                 </div>
                 <div class="contact-right">
                     <h1>Contact Form</h1>
-                    <form>
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea name="Message" rows="3" placeholder="Message"></textarea>
-                        <button class="btn-grad1" type="submit">Submit</button>
+                    <form id="form">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <textarea name="Message" id="comment" rows="3" placeholder="Message"></textarea>
+                        <button class="btn-grad1" id="submit-btn" type="submit">Submit</button>
                     </form>
+                    <p class="pop-message" id="pop-message"></p>
+
                 </div>
             </div>
         </div>
