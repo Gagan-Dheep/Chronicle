@@ -230,12 +230,12 @@ font-size: 30px;
     width: 80px;
     aspect-ratio: 3/2;
     object-fit: contain;
-mix-blend-mode: multiply;
+mix-blend-mode: darken;
 }
 
 .icon img:hover{
     transform: scale(1.1);
-    mix-blend-mode: luminosity;
+    mix-blend-mode: multiply;
 }
 /* Contact section */
 .contact{
