@@ -123,13 +123,13 @@ color: transparent;
     background: linear-gradient(90deg,#7345c4,#f578fb,#1287c5 ,#2562e4);
     color: transparent;
     -webkit-background-clip: text;
-    padding-bottom: 10px;
+    padding-bottom:10px ;
 
 }
 /* SECTION */
 section{
     height: 100vh;
-     padding: 75px 9% 20Px;
+     padding: 120px 9% 20Px;
   }
 
   /* linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%); */
@@ -269,6 +269,10 @@ form input,form textarea{
     padding: 5px;
     margin: 15px 0;
     border-radius: 10px;
+}
+.pop-message{
+    font-size: 18px;
+    color: #2ef50b;
 
 }
 
@@ -326,6 +330,9 @@ form input,form textarea{
         display: none;
     }
 
+    .skillbar .icon img{
+        padding-top: 10px;
+    }
     .row{
         flex-wrap: nowrap;
         flex-direction: column;

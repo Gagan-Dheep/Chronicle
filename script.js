@@ -14,5 +14,26 @@ function update(){
 }
 update()
 
+// CONTACT POP UP
+var submitbtn=document.getElementById("submit-btn")
+
+submitbtn.addEventListener("click",()=>{
+    var form=document.getElementById("form")
+    var popmessage=document.getElementById("pop-message")
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var comment = document.getElementById("comment").value;
+
+    if(name==="" || email===""|| comment===""){
+        popmessage.textContent=alert("please fill out all fields")
+        return
+    }
+
+    setTimeout(()=>{
+        form.reset();
+        popmessage.textContent="Submitted successfully!"
+    },1000)
+} )
 
 
