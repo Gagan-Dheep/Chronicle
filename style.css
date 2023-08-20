@@ -252,7 +252,7 @@ mix-blend-mode: darken;
 
 .contact-left p{
     font-size: 20px;
-    color: red;
+    color: rgb(253, 6, 6);
 }
 .contact-right form{
     width: 100%;
@@ -264,7 +264,7 @@ mix-blend-mode: darken;
 form input,form textarea{
     width: 100%;
     background: lightgray;
-    color: rgb(242, 11, 11);
+    color: rgb(0, 0, 0);
     border: 0;
     padding: 5px;
     margin: 15px 0;
@@ -272,7 +272,7 @@ form input,form textarea{
 }
 .pop-message{
     font-size: 18px;
-    color: #2ef50b;
+    color: red;
 
 }
 
