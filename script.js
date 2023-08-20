@@ -15,7 +15,7 @@ function update(){
 update()
 
 // CONTACT POP UP
-const submitbtn=document.getElementById("submit-btn")
+var submitbtn=document.getElementById("submit-btn")
 
 submitbtn.addEventListener("click",()=>{
     var form=document.getElementById("form")
