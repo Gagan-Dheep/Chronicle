@@ -33,7 +33,7 @@ submitbtn.addEventListener("click",()=>{
         return
     }
 
-    if(!emailpattern.test(email.value)){
+    if(!emailpattern.test(email)){
       alert("Please enter a valid email address")
         return;
     }
