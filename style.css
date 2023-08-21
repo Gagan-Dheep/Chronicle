@@ -273,7 +273,10 @@ form input,form textarea{
 .pop-message{
     font-size: 18px;
     color: red;
-
+}
+.email_error{
+    font-size: 18px;
+    color: red;
 }
 
 .footer {
