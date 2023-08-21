@@ -17,7 +17,8 @@ update()
 // CONTACT POP UP
 var submitbtn=document.getElementById("submit-btn")
 
-submitbtn.addEventListener("click",()=>{
+submitbtn.addEventListener("click",(e)=>{
+    e.preventDefault();
     var form=document.getElementById("form")
     var popmessage=document.getElementById("pop-message")
     var Emessage=document.getElementById("email-message")
@@ -26,7 +27,9 @@ submitbtn.addEventListener("click",()=>{
     var email = document.getElementById("email").value;
     var comment = document.getElementById("comment").value;
 
-    const emailpattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    var email_error=document.getElementById("email_error")
+
+    const emailpattern=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
     if(name==="" || email===""|| comment===""){
         popmessage.textContent="please fill out all fields"
@@ -34,14 +37,16 @@ submitbtn.addEventListener("click",()=>{
     }
 
     if(!emailpattern.test(email)){
-      alert("Please enter a valid email address")
+        popmessage.textContent= "Please enter a valid email address"
         return;
     }
 
+    form.reset();
+    popmessage.textContent="Submitted successfully!"
+
     setTimeout(()=>{
-        form.reset();
-        popmessage.textContent="Submitted successfully!"
-    },1000)
+        popmessage.textContent=" "
+    },3000)
 } )
 
 
